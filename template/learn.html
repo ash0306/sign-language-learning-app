@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles.css') }}" > -->
+  <link rel="stylesheet" href="../static/styles.css">
+  <title>Learn Sign Language!</title>
+</head>
+<body>
+  
+  <div class="top-bar">
+    <h1>Sign Language E-Learning Platform</h1>
+  </div>
+
+  <div class="nav-bar">
+    <div class="nav-title">
+      <h3>Please choose a mode:</h3>
+      <p>
+        <b>Learn</b>: Learn the ASL finger spelling gestures!!<br>
+        <b>Practice</b>: The correct sign will be shown on screen, just match it!!<br>
+        <b>Assess</b>: Assess your sign language skills by trying to sign the given words.(No helping images will be given)<br>
+      <br>
+        <b>Note:</b> Please practice with your right hand.
+      </p>
+    </div>
+  </div>
+
+  <form method="post" action="{{ url_for('mode') }}" class="btn-form">
+    <div class="buttons">
+      <input type="submit" value="Learn" name="learn" class="sbt-btn"/>
+    </div>
+    <div class="buttons">
+      <input type="submit" value="Practice" name="practice" class="sbt-btn"/>
+    </div>
+    <div class="buttons">
+      <input type="submit" value="Assess" name="assess" class="sbt-btn"/>
+    </div>
+  </form>
+  
+  <br>
+  <div class="resources">
+    <div class="asl-img">
+        <table>
+          <tr>
+            <th style="width:10%">Alphabet</th>
+            <th style="width:30%">Sign Gesture</th>
+            <th>How to?</th>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td>
+              <img src = "{{ url_for('static', filename='../static/alphabets/A.png') }}" alt="A" class="ges-img"/>
+            </td>
+            <td>Make a fist with your thumb on the side of the fist such that the thumb is pointing upwards</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/B.png') }}" alt="B" class="ges-img"/></td>
+            <td>Keep your palm open with all the fingers pointing upwards and the tip of the thumb resting at the base of the ring finger</td>
+          </tr> 
+          <tr>
+            <td>C</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/C.png') }}" alt="C" class="ges-img"/></td>
+            <td>Make a C shape with your hand similar to holding a bottle</td>
+          </tr> 
+          <tr>
+            <td>D</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/D.png') }}" alt="D" class="ges-img"/></td>
+            <td>Hold your hand up in a way that the pointer finger points up and the remaining fingers are curled so that the middle finger and the thumb meet</td>
+          </tr> 
+          <tr>
+            <td>E</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/E.png') }}" alt="E" class="ges-img"/></td>
+            <td>Make fist-like gesture where all fingers except the thumb are curled and the thumb is placed horizontaly in such a way that the tips of the fingers rest on the thumb</td>
+          </tr> 
+          <tr>
+            <td>F</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/F.png') }}" alt="F" class="ges-img"/></td>
+            <td>Hold your hand up with the palm facing forward. Then curl the index finger and thumb so that their tips meet</td>
+          </tr> 
+          <tr>
+            <td>G</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/G.png') }}" alt="G" class="ges-img"/></td>
+            <td>Hold you hand up with palm facing forward then connec the tips of your thumb and forefinger</td>
+          </tr> 
+          <tr>
+            <td>H</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/H.png') }}" alt="H" class="ges-img"/></td>
+            <td>Hold your hand vertically with the palm facing forward and curl your ring finger, pinky and thumb towards your palm</td>
+          </tr> 
+          <tr>
+            <td>I</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/I.png') }}" alt="I" class="ges-img"/></td>
+            <td>Hold your hand up vertically and curl all your fingers except the pinky. Keep your thumb vertical(parallel to the pinky)</td>
+          </tr> 
+          <tr>
+            <td>J</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/J.png') }}" alt="J" class="ges-img"/></td>
+            <td>This is similar to the gesture for the alphabet I but you should tilt your pinky</td>
+          </tr> 
+          <tr>
+            <td>K</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/K.png') }}" alt="K" class="ges-img"/></td>
+            <td>Hold your hald up with the index and finger pointed while the other fingers are curled. THe thumb is placed such that its tip is in between the index and middle finger</td>
+          </tr> 
+          <tr>
+            <td>L</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/L.png') }}" alt="L" class="ges-img"/></td>
+            <td>Hold your hand up with the palm facing forward with the pointer finger kept vertically and thumb kept horizontally. THe rest of the fingers are curled</td>
+          </tr> 
+          <tr>
+            <td>M</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/M.png') }}" alt="M" class="ges-img"/></td>
+            <td>Make a fist with the fingers covering the thumb. The ring, middle and pointer fingers are placed higher than the pinky finger.</td>
+          </tr> 
+          <tr>
+            <td>N</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/N.png') }}" alt="N" class="ges-img"/></td>
+            <td>Make a fist with the thumb under the pointer and middle finger. THe tip of the thumb sticks out from between the middle and ring finger</td>
+          </tr> 
+          <tr>
+            <td>O</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/O.png') }}" alt="O" class="ges-img"/></td>
+            <td>Hold your hand up with the palm facing the side and curl the fingers so that the tips of the fingers touch</td>
+          </tr> 
+          <tr>
+            <td>P</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/P.png') }}" alt="P" class="ges-img"/></td>
+            <td>Hold the hald so the pointer finger points to the side and the middle finger the thumb are pointing down so that they touch.</td>
+          </tr> 
+          <tr>
+            <td>Q</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/Q.png') }}" alt="Q" class="ges-img"/></td>
+            <td>The pointer finger and the thumb are kept parallel to one another and the rest of the fingers are curled. The pointer finger and thumb should be pointing downwards</td>
+          </tr> 
+          <tr>
+            <td>R</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/R.png') }}" alt="R" class="ges-img"/></td>
+            <td>Hold the hand up with the palm facing forward. The pointer finger and the thumb are crossed while the rest of the fingers are curled</td>
+          </tr> 
+          <tr>
+            <td>S</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/S.png') }}" alt="S" class="ges-img"/></td>
+            <td>Make a fist with the thumb laying on top of the curled fingers</td>
+          </tr> 
+          <tr>
+            <td>T</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/T.png') }}" alt="T" class="ges-img"/></td>
+            <td>Make a fist with your hand and the pointer finger is curled over the thumb with the tip of the thumb between the index and middle finger</td>
+          </tr> 
+          <tr>
+            <td>U</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/U.png') }}" alt="U" class="ges-img"/></td>
+            <td>Hold you hand up with the palm facing forward. Thd index and middle finger are kept straight together pointing upwards while the othe fingers are curled</td>
+          </tr> 
+          <tr>
+            <td>V</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/V.png') }}" alt="V" class="ges-img"/></td>
+            <td>This is similar to the alphabet U but the index and middle finger have a space between them.</td>
+          </tr> 
+          <tr>
+            <td>W</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/W.png') }}" alt="W" class="ges-img"/></td>
+            <td>Hold your hand up with the palm facing forward. THe index, middle and ring finger are held straight up with some gap between them while the remaining fingers are curled</td>
+          </tr> 
+          <tr>
+            <td>X</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/X.png') }}" alt="X" class="ges-img"/></td>
+            <td>Make a fist with your hand. Now extend the index finger up in a half curl as opposed to a full curl used when making a fist</td>
+          </tr> 
+          <tr>
+            <td>Y</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/Y.png') }}" alt="Y" class="ges-img"/></td>
+            <td>Make a fist with your hand. Now extend out both the pinky and thumb</td>
+          </tr> 
+          <tr>
+            <td>Z</td>
+            <td><img src = "{{ url_for('static', filename='../static/alphabets/Z.png') }}" alt="Z" class="ges-img"/></td>
+            <td>Make a fist with your hand and then extend the index finger. Now use the index finger to make a sweeping motion in the shape of the alphabet Z</td>
+          </tr>
+        </table>
+    </div>
+  </div>
+</body>
+</html>

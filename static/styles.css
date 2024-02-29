@@ -1,0 +1,124 @@
+*{
+    background-color: #FFF8E3 ;
+    margin: 0px;
+    font-family:"Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.top-bar{
+    text-align: center;
+    /* background-color: lightcoral; */
+    padding: 15px;
+    color: #7469B6;
+}
+
+.nav-bar{
+    /* color: #E6A4B4; */
+    color: #F082AC;
+    /* color: #eb548e; */
+    padding: 10px;
+    font-size: larger;
+}
+
+.nav-title{
+    text-align: center;
+}
+
+p{
+    padding: 10px;
+}
+
+.btn-form{
+    display: flex;
+    padding: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+
+.sbt-btn{
+  background-color: #7469B6;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.sbt-btn:hover,
+.sbt-btn:focus {
+  background-color: #E6A4B4;
+}
+
+.video-feed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-img{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.resources{
+    padding: 30px;
+}
+
+.asl-img{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    padding: 100px;
+    text-align: center;
+    color: #F082AC;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #F082AC;
+}
+
+th {
+    border: 2px solid #7469B6;
+    text-align: center;
+    padding: 8px;
+}
+
+td{
+    border: 2px solid #7469B6;
+    text-align: center;
+    padding: 8px;
+}
+
+.ges-img{
+    height: 100px;
+    width: 100px;
+}

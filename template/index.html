@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles.css') }}" >
+  <!-- <link rel="stylesheet" href="../static/styles.css"> -->
+  <title>Learn Sign Language!</title>
+</head>
+<body>
+  
+  <div class="top-bar">
+    <h1>Sign Language E-Learning Platform!</h1>
+  </div>
+
+  <div class="nav-bar">
+    <div class="nav-title">
+      <h3>Please choose a mode:</h3>
+      <p>
+        <b>Learn</b>: Learn the ASL finger spelling gestures!!<br>
+        <b>Practice</b>: The correct sign will be shown on screen, just match it!!<br>
+        <b>Assess</b>: Assess your sign language skills by trying to sign the given words.(No helping images will be given)<br>
+      <br>
+        <b>Note:</b> Please practice with your right hand.
+      </p>
+    </div>
+  </div>
+
+  <form method="post" action="{{ url_for('mode') }}" class="btn-form" >
+    <div class="buttons">
+      <a href="{{ url_for('learn')}}" class="sbt-btn">Learn</a>
+    </div>
+    <div class="buttons">
+      <input type="submit" value="Practice" name="practice" class="sbt-btn"/>
+    </div>
+    <div class="buttons">
+      <input type="submit" value="Assess" name="assess" class="sbt-btn"/>
+    </div>
+  </form>
+  
+  <br>
+  <div class="video-feed">
+    <img src="{{ url_for('video_feed') }}" class="video-img">
+  </div>
+</body>
+</html>
