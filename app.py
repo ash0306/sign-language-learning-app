@@ -37,7 +37,7 @@ cam_max = camera_max()
 cap = cv2.VideoCapture(cam_max, cv2.CAP_DSHOW)
 
 letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-words = [i for i in sorted(list(web2lowerset)) if len(i) > 3 and len(i) <= 10]
+words = [i for i in sorted(list(web2lowerset)) if 'z' and 'g' and 'h' not in i and len(i) > 3 and len(i) <= 10]
 start_time = time.time()
 curr_time = 0
 easy_word_user = ''
@@ -106,7 +106,7 @@ def practice_mode(frame):
                             test_pred = np.argmax(clf.predict_proba(np.array([test_image])))
                             test_probs = clf.predict_proba(np.array([test_image]))[0]
                             # print("Predicted:",letters[test_pred], ", pred prob:", max(test_probs), ", current index:", easy_word_index, ", current time:", curr_time)
-                            if max(test_probs) >= 0.8 or (max(test_probs) >= 0.6 and letters[test_pred] in ['p','r','u','v']):
+                            if max(test_probs) >= 0.7 or (max(test_probs) >= 0.8 and letters[test_pred] in ['p','r','u','v']):
                                 pred_letter = letters[test_pred].upper()
                                 if easy_word_index < len(easy_word) and pred_letter == easy_word[easy_word_index] and (easy_word_index == 0 or easy_word[easy_word_index] != easy_word[easy_word_index - 1]):
                                     easy_word_user += pred_letter
@@ -192,7 +192,7 @@ def assess_mode(frame):
                             test_pred = np.argmax(clf.predict_proba(np.array([test_image])))
                             test_probs = clf.predict_proba(np.array([test_image]))[0]
                             # print("Predicted:",letters[test_pred], ", pred prob:", max(test_probs), ", current index:", easy_word_index, ", current time:", curr_time)
-                            if max(test_probs) >= 0.8 or (max(test_probs) >= 0.6 and letters[test_pred] in ['p','r','u','v']):
+                            if max(test_probs) >= 0.7 or (max(test_probs) >= 0.8 and letters[test_pred] in ['p','r','u','v']):
                                 pred_letter = letters[test_pred].upper()
                                 if easy_word_index < len(easy_word) and pred_letter == easy_word[easy_word_index] and (easy_word_index == 0 or easy_word[easy_word_index] != easy_word[easy_word_index - 1]):
                                     easy_word_user += pred_letter
