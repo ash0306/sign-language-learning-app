@@ -17,22 +17,22 @@ THe Sign Language E-Learning Platform is a project that aims to provide users wi
 * IDE: Use of VSCode as the Integrated Development Environment for coding, debugging, and version control integration.
 
 ## System Architecture
-![System Architecture](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/a60c11f3-0a11-47fb-ac89-755d5f45c995)
+![System Architecture](static/System%20Architecture.png)
 
 
 ## Output
 #### Output 1 - Homepage
 
-![Homepage](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/8c2b6b5c-5ed2-4ec4-b18e-5b6625402c16)
+![Homepage](static/Homepage.png)
 
 #### Output 2 - Learn Section
-![Learn Section](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
+![Learn Section](static/Learn.png)
 
 #### Output 3 - Practice Section
-![Practice Section](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
+![Practice Section](static/Practice.png)
 
 #### Output 4 - Assess Section Section
-![Assess Section](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
+![Assess Section](static/Assess.png)
 
 
 ## Results
